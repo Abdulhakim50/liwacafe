@@ -10,7 +10,7 @@ const DataTable = ({isDarkMode, selectedData, isOpen, isOpenPrice, selectedMenuD
 
 
   return (
-    <div className={`flex-container ${selectedMenu ? 'mt-[0px] lg:ml-[0px] ' : isOpenSubMenu || isReportOpen ? 'max-lg:mt-[320px] lg:ml-[0px]' : isOpen ? 'max-lg:mt-[300px] lg:ml-[0px]' : ''}
+    <div className={`flex-container ${selectedMenu ? 'isopenselectedmenu ' : isOpenSubMenu || isReportOpen ? 'max-lg:mt-[320px] lg:ml-[0px]' : isOpen ? 'max-lg:mt-[300px] lg:ml-[0px]' : ''}
 
     `}  >
       <div className={`table-containerr ${isOpenPrice || activeAdisyon ? 'hide' : ''}  `}>
