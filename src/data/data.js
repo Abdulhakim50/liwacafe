@@ -1,3 +1,6 @@
+
+
+
 export const User = [
   {
     name: "Ibrahim",
@@ -7,42 +10,42 @@ export const User = [
 
 export const Products = [
   {
-    src: "../assets/electro1.png",
+    src: "/assets/image_1.png",
     name: "Ankara Branch",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
     desc: "Mevcut Kasa Durumu",
   },
   {
-    src: "src/assets/image_2.png",
+    src: "assets/image_2.png",
     name: "Murat Kafe",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
     desc: "Mevcut Kasa Durumu",
   },
   {
-    src: "src/assets/image_3.png",
+    src: "assets/image_3.png",
     name: "İzmir Branch",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
     desc: "Mevcut Kasa Durumu",
   },
   {
-    src: "src/assets/image_4.png",
+    src: "assets/image_4.png",
     name: "K.Maraş Branch",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
     desc: "Mevcut Kasa Durumu",
   },
   {
-    src: "src/assets/image_6.png",
+    src: "assets/image_6.png",
     name: "Liwa Cafe",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
     desc: "Mevcut Kasa Durumu",
   },
   {
-    src: "src/assets/image_1.png",
+    src: "assets/image_1.png",
     name: "Ankara Branch",
     Lisans: "Active",
     Bitistarihi: "08:04:27",
