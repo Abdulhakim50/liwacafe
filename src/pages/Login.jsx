@@ -9,7 +9,7 @@ const Login = ({setLoggedIn}) => {
         <div className='bg '>
         <LoginNav/>
        <LoginForm setLoggedIn={setLoggedIn}/>
-       <MobileLogin/>
+       <MobileLogin setLoggedIn={setLoggedIn}/>
     </div>
     
     )

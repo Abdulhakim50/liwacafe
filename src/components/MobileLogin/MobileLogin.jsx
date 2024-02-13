@@ -1,7 +1,30 @@
 import React from 'react'
 import './style.css'
+import { User } from '../../data/data';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const MobileLogin = () => {
+
+const MobileLogin = ({ setLoggedIn }) => {
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate()
+
+  const handleLogin = () => {
+
+    const user = User.find((u) => u.name === username && u.password === password);
+
+    if (user) {
+
+      setLoggedIn(true);
+      return navigate('/products')
+
+    } else {
+
+      alert('Invalid credentials');
+    }
+  };
   return (
     <>
 
@@ -40,6 +63,7 @@ const MobileLogin = () => {
                         id="email"
                         name="email"
                         placeholder="Enter your email here"
+                        onChange={(e) => setUsername(e.target.value)}
                       />
                     </div>
                     <div className='flex flex-col gap-10 relative'>
@@ -48,10 +72,11 @@ const MobileLogin = () => {
                         id="password"
                         name="password"
                         placeholder="Enter your password here"
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                       <a href="/"  >Forgot Password?</a>
                        
-                      <button className='Poppins'>Login</button>
+                      <button className='Poppins' onClick={handleLogin}>Login</button>
                     </div>
                   </form>
                 </div>
