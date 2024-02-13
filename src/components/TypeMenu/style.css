@@ -5,6 +5,11 @@
     width: 200px;
     background-color: var( --components-color);
 }
+@media  (max-width: 640px) {
+    .isopensubmenu {
+        right: -175px;
+    }
+}
 
 .typemenuwrapper {
     display: flex;

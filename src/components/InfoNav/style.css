@@ -49,7 +49,7 @@
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 400px) {
     .leftnav div {
         gap: 1.25rem
     }

@@ -8,7 +8,7 @@
     <>
     { isOpenSubMenu && !selectedMenu &&
     <div
-                    className={`typemenucont  transition-all    ${isOpenSubMenu && 'max-sm:right-[-175px]   transition-all'}  ${isopen && 'hidden'}  `}
+                    className={`typemenucont  transition-all    ${isOpenSubMenu && 'isopensubmenu   transition-all'}  ${isopen && 'hidden'}  `}
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
