@@ -45,7 +45,7 @@ const DataTableF = ({isDarkMode,showTable, selectedData, isOpenPrice, activeAdis
               {
                 activeAdisyon && (
                   <>
-                    <tr key={activeAdisyon.id} className={`table-header-row4 dark:bg-[#293B46] bg-white`}>
+                    <tr key={activeAdisyon.id} className={`table-header-row4  headingcolor`}>
                       <td className="  Poppins">Yemeke</td>
                       <td className="  Poppins">Adet</td>
                       <td className="  Poppins">Fiyat</td>
