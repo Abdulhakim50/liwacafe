@@ -45,6 +45,17 @@
 }
 
 
+@media (max-width: 1024px) {
+    .movetables {
+        margin-top: 320px;
+    }
+}
+@media (min-width: 1024px) {
+    .movetables {
+        margin-left: 0px;
+    }
+}
+
 
 
 
