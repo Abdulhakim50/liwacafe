@@ -21,7 +21,7 @@ function Footer() {
 
             <div className="footer-1 link-cont">
               <div className="logo">
-                  <img src='/assets/Lewa.png' alt="Logo"/>
+                  <img src='/assets/lewa.png' alt="Logo"/>
                   <p>Liwa Soft</p>
                   {/* <span className="animate" style={i1}></span> */}
               </div>
