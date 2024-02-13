@@ -3,7 +3,6 @@ import { User } from '../../data/data';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css'
-import logo from "../../assets/electro1.png"
 
 const LoginForm = ({ setLoggedIn }) => {
   const [username, setUsername] = useState('');
@@ -35,7 +34,7 @@ const LoginForm = ({ setLoggedIn }) => {
       <div className='loginwrapper'>
       
           <div className=' imgwrapper  '>
-            <img src={logo} alt="log_img"  />
+            <img src='/assets/electro1.png' alt="log_img"  />
           </div>
 
      

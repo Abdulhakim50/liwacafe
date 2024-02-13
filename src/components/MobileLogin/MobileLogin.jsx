@@ -1,14 +1,12 @@
 import React from 'react'
 import './style.css'
-import moblogo from "../../assets/Mobile_Login.png"
-import flagtr from "../../assets/turk.png"
 
 const MobileLogin = () => {
   return (
     <>
 
       <div className='mobilelogincontainer'>
-        <img src={moblogo} alt="mobile_img" className='w-full h-auto ' />
+        <img src='/assets/Mobile_Login.png' alt="mobile_img" className='w-full h-auto ' />
 
         <div className='mobileloginwrapper'>
           <div className='mobileloginwrappertwo'>
@@ -21,7 +19,7 @@ const MobileLogin = () => {
                 </svg>
               </div>
               <div className='uppercontentswrapper'>
-                <img src={flagtr} alt="turk_img" />
+                <img src='/assets/turk.png' alt="turk_img" />
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                   <g opacity="0.65">
                     <path d="M0.819686 3.18291L5.14986 8.43691C5.3314 8.63994 5.64937 8.63994 5.83092 8.43691L10.1826 3.18291C10.4447 2.88857 10.2363 2.42236 9.84205 2.42236H1.16129C0.765975 2.42236 0.556502 2.88857 0.819686 3.18291Z" fill="black" />

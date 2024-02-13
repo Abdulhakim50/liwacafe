@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../../assets/lewa.png"
 import { useTranslation } from 'react-i18next';
 import './footer.css'
 
@@ -22,7 +21,7 @@ function Footer() {
 
             <div className="footer-1 link-cont">
               <div className="logo">
-                  <img src={logo} alt="Logo"/>
+                  <img src='/assets/Lewa.png' alt="Logo"/>
                   <p>Liwa Soft</p>
                   {/* <span className="animate" style={i1}></span> */}
               </div>
