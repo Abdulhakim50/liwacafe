@@ -33,6 +33,20 @@
 }
 
 
+@media (max-width: 1024px) {
+    .hideisopen {
+        margin-top: 300px;
+    }
+}
+@media (min-width: 1024px) {
+    .hideisopen {
+        margin-left:0px;
+    }
+}
+
+
+
+
 
 .table-containerr {
     display: flex;

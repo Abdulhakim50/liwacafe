@@ -8,7 +8,7 @@ const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, sele
   return (
     <>
 
-      <div className={` navtablecontainer dark:border-none   transition-[30s]  ${isOpen && 'hidden transition-[10s] '} ${ isDarkMode ?  'bg-[#293B46]' : 'bg-white'}   `}>
+      <div className={` navtablecontainer    transition-[30s]  ${isOpen && 'hidden transition-[10s] '} ${ isDarkMode ?  'bg-[#293B46]' : 'bg-white'}   `}>
         <h1 className='     Poppins '>{(isOpenPrice && 'PRODUCTS') ||( activeAdisyon && 'ACIK ADISIYONLAR') || ('REPORTS')}</h1>
         {
           (isOpenPrice && products.map((row) => (
