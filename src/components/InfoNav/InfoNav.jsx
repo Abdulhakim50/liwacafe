@@ -4,7 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 // import useTheme from '../../contexts/them';
 import './style.css'
 
-const InfoNav = ({ setisOpenPrice, setactiveAdisyon, setLoggedIn,toggleDarkMode, isDarkMode }) => {
+const InfoNav = ({selectedMenu, setisOpenPrice, setactiveAdisyon, setLoggedIn,toggleDarkMode, isDarkMode }) => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -38,7 +38,7 @@ const InfoNav = ({ setisOpenPrice, setactiveAdisyon, setLoggedIn,toggleDarkMode,
         </div>
         <div className='rightnav  '>
           <div className=' hiderightnav  '>
-            <div onClick={() => { setisOpenPrice(true); setactiveAdisyon(false) }} className='Poppins'>Product Price</div>
+            <div onClick={() => { setisOpenPrice(true); setactiveAdisyon(false); } } className='Poppins'>Product Price</div>
             <div onClick={() => { setactiveAdisyon(true); setisOpenPrice(false) }} className='Poppins'>Active Adisyon</div>
 
             <div onClick={() => setLoggedIn(false)} className='Poppins'>Logout</div>

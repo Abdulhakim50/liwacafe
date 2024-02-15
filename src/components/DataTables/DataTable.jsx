@@ -21,7 +21,7 @@ const DataTable = ({isDarkMode, selectedData, isOpen, isOpenPrice, selectedMenuD
         </div>
       </div>
 
-      <div className={`table-wrapper   ${isOpen ? 'isopen ' : 'not-isopen '} ${selectedDate && 'hide'} ${isOpenPrice || activeAdisyon ? 'max-lg:mt-[-100px]' : ''}  `}>
+      <div className={`table-wrapper   ${isOpen ? 'isopen ' : 'not-isopen '} ${selectedDate && 'hide'} ${isOpenPrice || activeAdisyon ? '' : ''}  `}>
 
 
         <DataTableF isDarkMode={isDarkMode} showTable={showTable}  selectedMenu={selectedMenu} selectedData={selectedData} isOpen={isOpen} isOpenPrice={isOpenPrice} activeAdisyon={activeAdisyon} selectedRow={selectedRow} tableData={tableData} selectedActiveAdision={selectedActiveAdision} selectedProduct={selectedProduct} isTabelSelected={isTabelSelected} setisTabelSelected={setisTabelSelected} />

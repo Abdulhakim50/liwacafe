@@ -2,7 +2,7 @@ import React from 'react'
 import { tableInputs } from '../../data/data';
 import './style.css'
 
-const Reports = ({setSelectedRow, isReportOpen, setisReportOpen}) => {
+const Reports = ({ isOpenPrice, activeAdisyon,setSelectedRow, isReportOpen, setisReportOpen}) => {
 
     const toggleDropdown = () => {
         setisReportOpen(!isReportOpen);
@@ -16,7 +16,7 @@ const Reports = ({setSelectedRow, isReportOpen, setisReportOpen}) => {
 
 
     <>
-      <div className={`transition-all reportscontainer   `}>
+      <div className={`transition-all reportscontainer ${(isOpenPrice || activeAdisyon ) && 'hidden'}   `}>
         <button
           type="button"
           className=" reportsbutton"

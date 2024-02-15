@@ -14,6 +14,7 @@ const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isO
   const toggleDropdown = ()=> {
     setIsOpen(!isOpen);
     setisOpenSubMenu(false);
+    
     setIsmenuOpen(!isMenuOpen);
     setisopen(false);
   };

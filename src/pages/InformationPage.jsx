@@ -161,7 +161,7 @@ const InformationPage = ({ setLoggedIn }) => {
       <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}> */}
       <div className={`  flex flex-col  items-start max-lg:gap-[50px]  test  h-[1200px] ${isDarkMode ? 'dark-mode' : 'light-mode'} ${selectedMenu && 'gap-'}`}  >
 
-        <InfoNav isOpenPrice={isOpenPrice} setisOpenPrice={setisOpenPrice} setactiveAdisyon={setactiveAdisyon} activeAdisyon={activeAdisyon} setLoggedIn={setLoggedIn} selectedData={selectedData} toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <InfoNav selectedMenu={selectedMenu} isOpenPrice={isOpenPrice} setisOpenPrice={setisOpenPrice} setactiveAdisyon={setactiveAdisyon} activeAdisyon={activeAdisyon} setLoggedIn={setLoggedIn} selectedData={selectedData} toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <div className='flex flex-col  '>
           <ReportSelections isOpen={isOpen} setIsOpen={setIsOpen} isReportOpen={isReportOpen} setisReportOpen={setisReportOpen}
             isOpenSubMenu={isOpenSubMenu} setisOpenSubMenu={setisOpenSubMenu} isOpenPrice={isOpenPrice} setisOpenPrice={setisOpenPrice}

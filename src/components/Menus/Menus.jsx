@@ -13,7 +13,7 @@ const Menus = ({setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHo
  
   return (
     <div className={` menuscontainer ${activeAdisyon || isOpenPrice ? 'hidden' : ''} `} >
-     <Reports  setSelectedRow={setSelectedRow} isReportOpen={isReportOpen} setisReportOpen={setisReportOpen} />
+     <Reports activeAdisyon={activeAdisyon} isOpenPrice={isOpenPrice}  setSelectedRow={setSelectedRow} isReportOpen={isReportOpen} setisReportOpen={setisReportOpen} />
 
       <div className='menuwrapper'>
 
@@ -41,7 +41,7 @@ const Menus = ({setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHo
                 setisTabelSelected={setisTabelSelected} isTabelSelected={isTabelSelected} isOpenSubMenu={isOpenSubMenu} selectedMenu={selectedMenu} data={tableInputs} setSelectedMenu={setSelectedMenu} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut}  handleDateMouseOut={handleDateMouseOut} handleDateMouseOver={handleDateMouseOver} />
         </div>
         <div className={``}>
-          <BranchOptions isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} setisOpenSubMenu={setisOpenSubMenu} selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} isOpenSubMenu={isOpenSubMenu} />
+          <BranchOptions isOpenPrice={isOpenPrice} activeAdisyon={activeAdisyon} isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} setisOpenSubMenu={setisOpenSubMenu} selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} isOpenSubMenu={isOpenSubMenu} />
         </div>
         <div className='max-lg:absolute max-lg:right-[0px] max-sm:right-[175px] '>
           <TypeMenu isopen={isopen} setisopen={setisopen} selectedMenu={selectedMenu} isOpenSubMenu ={isOpenSubMenu} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut}  handleDateMouseOut={handleDateMouseOut} handleDateMouseOver={handleDateMouseOver} setisOpenSubMenu={setisOpenSubMenu}/>

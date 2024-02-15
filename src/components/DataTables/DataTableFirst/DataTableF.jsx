@@ -10,7 +10,7 @@ const DataTableF = ({isDarkMode,showTable, selectedData, isOpenPrice, activeAdis
 
       <div className={`${showTable && 'max-lg:hidden'}`}>
         <div className="">
-          <table className={`table-container-f   ${isOpenPrice && 'w-[90%]'} ${activeAdisyon || isOpenPrice ? 'mt-[110px]' : ''}  `}>
+          <table className={`table-container-f   ${isOpenPrice && 'w-[90%]'} ${activeAdisyon || isOpenPrice ? '' : ''}  `}>
             <thead>
               <tr className='table-header-row    '>
                 <th colSpan={isOpenPrice ? "2" : "3"}>

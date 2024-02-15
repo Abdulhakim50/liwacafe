@@ -10,7 +10,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
   return (
 
     <>
-    <div className={`table-container  ${activeAdisyon || isOpenPrice  && 'hideheading'}  `}>
+    <div className={`table-container  ${(activeAdisyon || isOpenPrice ) && 'hideheading'}  `}>
     <h2 className="     Poppins ">{selectedMenuData?.Name}</h2>
     <div className='menu-dates'>
       <p className='   Poppins '>{selectedMenuData?.date1}</p>
@@ -21,7 +21,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
 
     
 
-      <div className={` ${!isTabelSelected &&  selectedMenu &&   'hidden'}  ${showTable && 'max-lg:hidden'}  ${activeAdisyon || isOpenPrice  && 'hidden'} `}>
+      <div className={` ${!isTabelSelected &&  selectedMenu &&   'hidden'}  ${showTable && 'max-lg:hidden'}  ${(activeAdisyon || isOpenPrice ) && 'hidden'} `}>
         <div className="">
           <table className='table    '>
             <thead>
@@ -54,7 +54,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
       </div>
 
 
-      <div className={`  ${!isTabelSelected &&  selectedMenu && 'hidden'} ${!showTable && 'max-lg:hidden'}`} >
+      <div className={`  ${!isTabelSelected &&  selectedMenu && 'hidden'} ${!showTable && 'max-lg:hidden'}  ${(activeAdisyon || isOpenPrice ) && 'hideheading'} `} >
         <div className=" overflow-x-auto ">
           <table className={`tabletwo   `}>
             <thead>
