@@ -53,7 +53,7 @@ const TableSelection = ({isMenuOpen,showTable,setShowTable}) => {
             <div className="tableoptionswrapper" role="none">
          
                     
-                  <div onClick={() => {setShowTable(false); setisTableMenuOpen(!isTableMenuOpen) }} className=' Poppins'>First Table</div>
+                  <div onClick={() => {setShowTable(false); setisTableMenuOpen(!isTableMenuOpen)}} className=' Poppins'>First Table</div>
                   <div onClick={() => { setShowTable(true);  setisTableMenuOpen(!isTableMenuOpen) }} className=' Poppins'>Second Table</div>
            
     

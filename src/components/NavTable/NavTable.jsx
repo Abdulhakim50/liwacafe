@@ -5,6 +5,7 @@ import { products,activeAdisyonData } from '../../data/data';
 import './style.css'
 
 const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, selectedData, activeAdisyon, slectedADRow, slectedProductRow, isDarkMode }) => {
+  console.log(selectedRow)
   return (
     <>
 
@@ -41,7 +42,7 @@ const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, sele
               >
                 <div  dangerouslySetInnerHTML={{ __html: row.logo }}></div>
 
-                <p className=" dark:text-white Poppins ">{row.name}</p>
+                <p className="  Poppins ">{row.name}</p>
               </div>
             </div>
           )))||

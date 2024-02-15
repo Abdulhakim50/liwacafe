@@ -219,6 +219,8 @@ const InformationPage = ({ setLoggedIn }) => {
               isTabelSelected={isTabelSelected}
               showTable={showTable}
               selectedDate={selectedDate}
+            
+
 
 
             />

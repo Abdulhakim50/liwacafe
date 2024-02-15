@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './style.css'
 
@@ -9,7 +10,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
   return (
 
     <>
-    <div className={`table-container   `}>
+    <div className={`table-container  ${activeAdisyon || isOpenPrice  && 'hideheading'}  `}>
     <h2 className="     Poppins ">{selectedMenuData?.Name}</h2>
     <div className='menu-dates'>
       <p className='   Poppins '>{selectedMenuData?.date1}</p>
@@ -20,7 +21,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
 
     
 
-      <div className={` ${!isTabelSelected &&  selectedMenu &&   'hidden'}  ${showTable && 'max-lg:hidden'} `}>
+      <div className={` ${!isTabelSelected &&  selectedMenu &&   'hidden'}  ${showTable && 'max-lg:hidden'}  ${activeAdisyon || isOpenPrice  && 'hidden'} `}>
         <div className="">
           <table className='table    '>
             <thead>
@@ -38,7 +39,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
               {
                 selectedMenuData &&
                 selectedMenuData.OzetBiligi.map((data, index) => (
-                  <tr key={data.id} className={`selectedmenu  transition-[2s]  ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                  <tr key={data.id} className={`selectedmenu  transition-[2s]   ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                     <td className="  ">{data.name}</td>
                     <td className="  ">{data.number}</td>
                     <td className="  ">{data.percentage}</td>

@@ -28,7 +28,7 @@ const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isO
  
 
   };
-  console.log(isOpenSubMenu)
+  console.log('isopen',isOpen)
   return (
     <>
 
@@ -90,7 +90,7 @@ const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isO
               </div>
             </>
             :
-            <div onClick={() => { setSelectedMenu(!selectedMenu); setIsOpen(!isOpen); setisOpenSubMenu(!isOpenSubMenu); setSelectedDate(false); }} className={`delete  transition-all   ${(isOpenPrice || activeAdisyon) && 'hidden'} `} mt-9 ><TiDeleteOutline className=' delete-icon dark:text-white' /></div>
+            <div onClick={() => { setSelectedMenu(!selectedMenu); setIsOpen(false); setisOpenSubMenu(!isOpenSubMenu); setSelectedDate(false);  }} className={`delete  transition-all   ${(isOpenPrice || activeAdisyon) && 'hidden'} `} mt-9 ><TiDeleteOutline className=' delete-icon dark:text-white' /></div>
         }
       </div>
     </>
