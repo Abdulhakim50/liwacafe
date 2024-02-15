@@ -60,7 +60,7 @@
 
 @media (max-width: 768px) {
     .table-header-row2 td {
-        padding-left: 0.25rem;
+        padding-left: 3rem;
         padding-right: 0.25rem;
     }
 }

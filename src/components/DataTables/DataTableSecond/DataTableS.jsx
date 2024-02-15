@@ -61,7 +61,7 @@ const DataTableS = ({isDarkMode, showTable,selectedData, isOpen, isOpenPrice, ac
            </>
         )}
           { 
-                 activeAdisyon && 
+                activeAdisyon && 
                selectedActiveAdision.info.map((data,index) => (
                 <tr key={data.id} className={`table-row-4 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                 <td className="   Poppins">{data.name}</td>
