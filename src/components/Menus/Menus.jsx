@@ -9,7 +9,6 @@ import Date from '../Date/Date';
 
 const Menus = ({setIsHovered,setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHovered, setSelectedDate, selectedDate,setisOpenSubMenu,isHovered , isTabelSelected,setisTabelSelected, isOpen, setIsOpen, isOpenSubMenu,  isOpenPrice, selectedMenu, setSelectedMenu, activeAdisyon,setSelectedRow, isReportOpen, setisReportOpen ,handleMouseOver, handleMouseOut,  handleDateMouseOut, handleDateMouseOver}) => {
 
- console.log('jjjjjjjjjjjjjjjjjjjjjjjjjjjj',isHovered)
  
   return (
     <div className={` menuscontainer ${activeAdisyon || isOpenPrice ? 'hidden' : ''} `} >

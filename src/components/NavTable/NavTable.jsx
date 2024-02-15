@@ -5,7 +5,6 @@ import { products,activeAdisyonData } from '../../data/data';
 import './style.css'
 
 const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, selectedData, activeAdisyon, slectedADRow, slectedProductRow, isDarkMode }) => {
-  console.log(selectedRow)
   return (
     <>
 

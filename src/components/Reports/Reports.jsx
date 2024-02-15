@@ -8,7 +8,6 @@ const Reports = ({ isOpenPrice, activeAdisyon,setSelectedRow, isReportOpen, seti
         setisReportOpen(!isReportOpen);
     
       };
-      console.log('report',isReportOpen)
   return (
     <div className={``}  >
 

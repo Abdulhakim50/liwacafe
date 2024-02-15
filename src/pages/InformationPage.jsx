@@ -80,7 +80,6 @@ const InformationPage = ({ setLoggedIn }) => {
   //   document.querySelector('html').classList.add(themeMode);
   // }, [themeMode]);
 
-  console.log('ismenuopen',isMenuOpen)
 
   const selectedMenuData = selectedMenu
     ? tableInputs.find((row) => row.id === selectedMenu)

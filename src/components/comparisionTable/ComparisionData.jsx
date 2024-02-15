@@ -6,7 +6,6 @@ import './style.css'
 const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isOpen, isOpenPrice, selectedMenuData, activeAdisyon, selectedRow, isTabelSelected, selectedDate }) => {
 
 
-   console.log('istableselected',isTabelSelected)
   return (
 
     <>
