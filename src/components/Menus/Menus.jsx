@@ -7,9 +7,9 @@ import './style.css'
 import TypeMenu from '../TypeMenu/TypeMenu';
 import Date from '../Date/Date';
 
-const Menus = ({setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHovered, setSelectedDate, selectedDate,setisOpenSubMenu,isHovered , isTabelSelected,setisTabelSelected, isOpen, setIsOpen, isOpenSubMenu,  isOpenPrice, selectedMenu, setSelectedMenu, activeAdisyon,setSelectedRow, isReportOpen, setisReportOpen ,handleMouseOver, handleMouseOut,  handleDateMouseOut, handleDateMouseOver}) => {
+const Menus = ({setIsHovered,setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHovered, setSelectedDate, selectedDate,setisOpenSubMenu,isHovered , isTabelSelected,setisTabelSelected, isOpen, setIsOpen, isOpenSubMenu,  isOpenPrice, selectedMenu, setSelectedMenu, activeAdisyon,setSelectedRow, isReportOpen, setisReportOpen ,handleMouseOver, handleMouseOut,  handleDateMouseOut, handleDateMouseOver}) => {
 
-
+ console.log('jjjjjjjjjjjjjjjjjjjjjjjjjjjj',isHovered)
  
   return (
     <div className={` menuscontainer ${activeAdisyon || isOpenPrice ? 'hidden' : ''} `} >
@@ -41,7 +41,7 @@ const Menus = ({setIsmenuOpen,isMenuOpen,isopen,setisopen,  selectedRow,isDateHo
                 setisTabelSelected={setisTabelSelected} isTabelSelected={isTabelSelected} isOpenSubMenu={isOpenSubMenu} selectedMenu={selectedMenu} data={tableInputs} setSelectedMenu={setSelectedMenu} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut}  handleDateMouseOut={handleDateMouseOut} handleDateMouseOver={handleDateMouseOver} />
         </div>
         <div className={``}>
-          <BranchOptions isOpenPrice={isOpenPrice} activeAdisyon={activeAdisyon} isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} setisOpenSubMenu={setisOpenSubMenu} selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} isOpenSubMenu={isOpenSubMenu} />
+          <BranchOptions setIsHovered={setIsHovered} isopen={isopen} isOpenPrice={isOpenPrice} activeAdisyon={activeAdisyon} isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} setisOpenSubMenu={setisOpenSubMenu} selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} isOpenSubMenu={isOpenSubMenu} />
         </div>
         <div className='max-lg:absolute max-lg:right-[0px] max-sm:right-[175px] '>
           <TypeMenu isopen={isopen} setisopen={setisopen} selectedMenu={selectedMenu} isOpenSubMenu ={isOpenSubMenu} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut}  handleDateMouseOut={handleDateMouseOut} handleDateMouseOver={handleDateMouseOver} setisOpenSubMenu={setisOpenSubMenu}/>

@@ -80,6 +80,8 @@ const InformationPage = ({ setLoggedIn }) => {
   //   document.querySelector('html').classList.add(themeMode);
   // }, [themeMode]);
 
+  console.log('ismenuopen',isMenuOpen)
+
   const selectedMenuData = selectedMenu
     ? tableInputs.find((row) => row.id === selectedMenu)
     : null;
@@ -193,7 +195,7 @@ const InformationPage = ({ setLoggedIn }) => {
 
 
             />
-            <Menus isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} isopen={isopen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} isReportOpen={isReportOpen} setisReportOpen={setisReportOpen}
+            <Menus setIsHovered={setIsHovered} isMenuOpen={isMenuOpen} setIsmenuOpen={setIsmenuOpen} isopen={isopen} setisopen={setisopen} isOpen={isOpen} setIsOpen={setIsOpen} isReportOpen={isReportOpen} setisReportOpen={setisReportOpen}
               isOpenSubMenu={isOpenSubMenu} setisOpenSubMenu={setisOpenSubMenu} isOpenPrice={isOpenPrice} setisOpenPrice={setisOpenPrice}
               selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} setSelectedRow={setSelectedRow} activeAdisyon={activeAdisyon} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut} handleDateMouseOut={handleDateMouseOut} handleDateMouseOver={handleDateMouseOver} isHovered={isHovered}
               setisTabelSelected={setisTabelSelected} isTabelSelected={isTabelSelected}

@@ -7,16 +7,16 @@ import './styles.css'
 
 
 
-const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isOpen, setIsOpen, isOpenSubMenu, setisOpenSubMenu, setisOpenPrice, isOpenPrice, selectedMenu, setSelectedMenu, activeAdisyon,setisReportOpen }) => {
+const BranchOptions = ({setIsHovered,isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isOpen, setIsOpen, isOpenSubMenu, setisOpenSubMenu, setisOpenPrice, isOpenPrice, selectedMenu, setSelectedMenu, activeAdisyon,setisReportOpen }) => {
   const [selectedBranch, setSelectedBranch] = useState(null);
 
 
   const toggleDropdown = ()=> {
     setIsOpen(!isOpen);
     setisOpenSubMenu(false);
-    
-    setIsmenuOpen(!isMenuOpen);
     setisopen(false);
+    setIsmenuOpen(!isMenuOpen);
+    setIsHovered(false) 
   };
 
 
@@ -29,7 +29,7 @@ const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isO
  
 
   };
-  console.log('isopen',isOpen)
+
   return (
     <>
 
@@ -91,7 +91,7 @@ const BranchOptions = ({isMenuOpen ,setIsmenuOpen,setisopen,setSelectedDate, isO
               </div>
             </>
             :
-            <div onClick={() => { setSelectedMenu(!selectedMenu); setIsOpen(false); setisOpenSubMenu(!isOpenSubMenu); setSelectedDate(false);  }} className={`delete  transition-all   ${(isOpenPrice || activeAdisyon) && 'hidden'} `} mt-9 ><TiDeleteOutline className=' delete-icon dark:text-white' /></div>
+            <div onClick={() => { setSelectedMenu(!selectedMenu); setIsOpen(false); setisOpenSubMenu(!isOpenSubMenu); setSelectedDate(false); setIsmenuOpen(false);}} className={`delete  transition-all   ${(isOpenPrice || activeAdisyon) && 'hidden'} `} mt-9 ><TiDeleteOutline className=' delete-icon dark:text-white' /></div>
         }
       </div>
     </>
