@@ -9,6 +9,7 @@ const ProductList = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [products, setProducts] = useState([]);
+  const [hoveredProducts, setHoveredProducts] = useState({});
 
 
   const ProductSkeleton = () => (
@@ -48,7 +49,7 @@ const ProductList = () => {
 
   useEffect(() => {
 
-  
+
 
     const fetchData = () => {
       setTimeout(() => {
@@ -62,13 +63,25 @@ const ProductList = () => {
     fetchData();
   }, []);
 
+  const handleMouseOver = (productId) => {
+    setHoveredProducts((prevHoveredProducts) => ({
+      ...prevHoveredProducts,[productId]: true,
+    }));
+  };
+
+  const handleMouseOut = (productId) => {
+    setHoveredProducts((prevHoveredProducts) => ({
+      ...prevHoveredProducts,[productId]: false,
+    }));
+  };
+
   return (
 
     <>
 
       <div className='headingcontainer'>
         <p className='Poppins' > Total Branches</p>
-        <hr  />
+        <hr />
       </div>
       <div className='productcontainer'>
 
@@ -81,10 +94,10 @@ const ProductList = () => {
             ))
           ) : (
 
-            products.map((product) => (
+            products.map((product,index) => (
 
-              <a href="/info">
-                <div className='product-container  ' >
+              <a href="/info" key={index}>
+                <div className='product-container relative ' >
                   <div className='image-container'>
                     <div className='flex flex-col'>
                       <div className='image-container2 '>
@@ -93,11 +106,11 @@ const ProductList = () => {
                           alt=""
                           className=' hover:scale-110 duration-1000'
                         />
-                    
+
                       </div>
                     </div>
                   </div>
-                  <div className='product-info'>
+                  <div className='product-info '>
 
                     <div className=''>
                       <p className='Poppins product-name'>{product.name}</p>
@@ -105,7 +118,35 @@ const ProductList = () => {
                     </div>
                     <p className='Poppins product-license' >Lisans:<span className=' Poppins '>{product.Lisans}</span></p>
                     <p className='Poppins product-expiry'>Bitis tarihi:{product.Bitistarihi}</p>
-                    <p className=' product-desc Poppins '>{product.desc}</p>
+                    <div>
+                      <p className='   product-desc Poppins '
+                        onMouseOver={()=>handleMouseOver(product.id)}
+                        onMouseOut={()=>handleMouseOut(product.id)}>
+                          {product.desc}
+                      </p>
+                     { 
+                   hoveredProducts[product.id] &&  
+                     <div className={`absolute top-[90px] left-[60px] flex  justify-center py-5  gap-4  text-[12.58px]   Poppins font-medium  w-[170px] h-[225px] shadow-md bg-white rounded-md ${ hoveredProducts[product.id] && 'transition-[5s]'} `}>
+                        <div className=' flex flex-col gap-4'>
+                          <p>Kredi Kart</p>
+                          <p>Kredi Kart</p>
+                          <p>Kredi Kart</p>
+                          <p>Kredi Kart</p>
+                          <p>Kredi Kart</p>
+                          <p>Kredi Kart</p>
+                        </div>
+                        <div className=' flex flex-col gap-4'>
+                          <p>5,400.00</p>
+                          <p>5,400.00</p>
+                          <p>5,400.00</p>
+                          <p>5,400.00</p>
+                          <p>5,400.00</p>
+                          <p>5,400.00</p>
+                        </div>
+                      </div>
+                      }
+                    </div>
+
                   </div>
                 </div>
               </a>

@@ -5,6 +5,7 @@
 
 .productnavwrapper {
     display: flex;
+    align-items: center;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     margin-left: 10rem;
@@ -33,7 +34,7 @@
     }
 }
 
-.productnavwrapper h1 {
+.productnavwrapper a {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;

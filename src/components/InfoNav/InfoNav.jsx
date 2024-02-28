@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { IoMdMenu } from "react-icons/io";
+
 // import useTheme from '../../contexts/them';
 import './style.css'
+import { Link } from 'react-router-dom';
 
 const InfoNav = ({selectedMenu, setisOpenPrice, setactiveAdisyon, setLoggedIn,toggleDarkMode, isDarkMode }) => {
 
@@ -32,8 +34,8 @@ const InfoNav = ({selectedMenu, setisOpenPrice, setactiveAdisyon, setLoggedIn,to
         <div className='leftnav'>
           <h3 className=' '>{sign}</h3>
           <div >
-            <a href="/" className='   Poppins'>back</a>
-            <h1 className={`  Poppins ${isDarkMode ? 'text-[#64758B]':'text-[#64758B]' }`} >Liwa<span className={` font-semibold  Poppins ${isDarkMode ? 'text-white':'text-[#334155]'}`}>Soft</span> </h1>
+            <a href="/products" className=' backlink   Poppins'>back</a>
+            <a href='/' className={` text-3xl font-semibold  Poppins ${isDarkMode ? 'text-[#64758B]':'text-[#64758B]' }`} >Liwa<span className={` font-semibold  Poppins ${isDarkMode ? 'text-white':'text-[#334155]'}`}>Soft</span> </a>
           </div>
         </div>
         <div className='rightnav  '>

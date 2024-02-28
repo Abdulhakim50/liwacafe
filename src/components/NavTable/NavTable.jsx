@@ -7,17 +7,16 @@ import './style.css'
 const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, selectedData, activeAdisyon, slectedADRow, slectedProductRow, isDarkMode }) => {
   return (
     <>
-
       <div className={` navtablecontainer    transition-[30s]  ${isOpen && 'hidden transition-[10s] '} ${ isDarkMode ?  'bg-[#293B46]' : 'bg-white'}   `}>
         <h1 className='     Poppins '>{(isOpenPrice && 'PRODUCTS') ||( activeAdisyon && 'ACIK ADISIYONLAR') || ('REPORTS')}</h1>
         {
-          (isOpenPrice && products.map((row) => (
-            <div className={classNames('   pricecontainer    ', {
+          (isOpenPrice && products.map((row,index) => (
+            <div    key={index} className={classNames('   pricecontainer    ', {
               'bg-[#E2E8F0]': slectedProductRow === row.id,
 
             })}>
               <div
-                key={row.id}
+             
                 className=' pricewrapper   '>
                 <div  dangerouslySetInnerHTML={{ __html: row.logo }}></div>
 
@@ -27,13 +26,13 @@ const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, sele
           )))||
 
         (  activeAdisyon &&
-          activeAdisyonData.map((row) => (
-            <div className={classNames('  activAdcontainer  ', {
+          activeAdisyonData.map((row,index) => (
+            <div   key={index} className={classNames('  activAdcontainer  ', {
               'bg-[#E2E8F0] ': slectedADRow === row.id,
 
             })}>
               <div
-                key={row.id}
+        
                 className=' activeAdwrapper   '
 
 
@@ -45,13 +44,13 @@ const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, sele
               </div>
             </div>
           )))||
-         ( selectedData && data.map((row) => (
-            <div className={classNames('   slecteddatacont  ', {
+         ( selectedData && data.map((row,index) => (
+            <div   key={index} className={classNames('   slecteddatacont  ', {
               'bg-[#E2E8F0] ': selectedRow === row.id,
 
             })}>
               <div
-                key={row.id}
+                key={index}
                 className=' slecteddatawrapper   '
 
 
@@ -65,7 +64,6 @@ const NavTable = ({ data, selectedRow, setSelectedRow, isOpen, isOpenPrice, sele
           )))
         }
       </div>
-
 
 
 

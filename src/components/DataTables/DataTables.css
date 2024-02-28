@@ -19,6 +19,7 @@
 @media (max-width: 1024px) {
     .flex-container {
         margin-left: 0px;
+        margin-top: 0px;
     }
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
 import './footer.css'
 
 // Icons
@@ -9,7 +8,7 @@ import { SiWhatsapp } from 'react-icons/si';
 
 
 function Footer() {
-  const { t } = useTranslation("translate");
+
 
  
   return (

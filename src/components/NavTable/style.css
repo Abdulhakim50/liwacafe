@@ -1,13 +1,19 @@
 .navtablecontainer {
-    height: 100%;
+ 
     width: 300px;
     background-color: var(  --components-color);
+    margin-top: 100px;
 }
 
+
 @media (min-width: 1024px) {
+  
     .navtablecontainer {
         position: fixed;
-        margin-top: 100px;
+        top: 0px;
+ 
+      
+       
     }
 }
 

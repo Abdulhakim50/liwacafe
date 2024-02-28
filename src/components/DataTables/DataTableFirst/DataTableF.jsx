@@ -23,7 +23,7 @@ const DataTableF = ({isDarkMode,showTable, selectedData, isOpenPrice, activeAdis
               {
                 isOpenPrice &&
                 selectedProduct.info.map((data, index) => (
-                  <tr key={data.id} className={`table-header-row2 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                  <tr key={index} className={`table-header-row2 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                     <td className=" ">
                       {data.name}
                     </td>
@@ -34,7 +34,7 @@ const DataTableF = ({isDarkMode,showTable, selectedData, isOpenPrice, activeAdis
 
               {!isOpenPrice && !activeAdisyon &&
                 selectedData.OzetBiligi.map((data, index) => (
-                  <tr key={data.id} className={`table-header-row3   ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                  <tr key={index} className={`table-header-row3   ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                     <td className="   Poppins">{data.name}</td>
                     <td className="   Poppins">{data.number}</td>
                     <td className="   Poppins">{data.percentage}</td>
@@ -51,7 +51,7 @@ const DataTableF = ({isDarkMode,showTable, selectedData, isOpenPrice, activeAdis
                       <td className="  Poppins">Fiyat</td>
                     </tr>
                     {selectedActiveAdision.info.map((data, index) => (
-                      <tr key={data.id} className={`table-header-row4 dark:bg-[#293B46] ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                      <tr key={index} className={`table-header-row4 dark:bg-[#293B46] ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                         <td className="  Poppins">{data.name}</td>
                         <td className="  Poppins">{data.number}</td>
                         <td className="  Poppins">{data.percentage}</td>

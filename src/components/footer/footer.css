@@ -1,6 +1,10 @@
 #footer {
   padding: 0 9% 0;
   border-top: .5px solid var(--btn-2);
+
+  overflow-x: hidden;
+
+
 }
 /* social */
 .social {

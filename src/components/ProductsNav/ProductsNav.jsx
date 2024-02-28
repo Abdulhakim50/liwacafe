@@ -7,7 +7,7 @@ const ProductsNav = ({setLoggedIn}) => {
   return (
     <div className='productnavcont'>
    <div className='productnavwrapper'>
-   <h1 className=' Poppins'>Liwa<span className=' Poppins'>Soft</span></h1>
+   <a href='/' className=' Poppins'>Liwa<span className=' Poppins'>Soft</span></a>
      <div onClick={()=>{setLoggedIn(false); <Navigate replace to={"/"}/>}} className='Poppins'>Logout</div>
      </div>
     </div>

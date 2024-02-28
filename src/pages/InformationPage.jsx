@@ -173,7 +173,7 @@ const InformationPage = ({ setLoggedIn }) => {
 
 
         <div className={`  mx-[70px]  lg:mx-[150px] max-xl:mx-[150px] max-sm:mx-[30px] max-md:mx-[70px]  gap-[10px]  ${isOpen && 'mx-[80px] '}  `} >
-          <div className={` realtive h-screen flex gap-[10px] max-lg:h-full  max-lg:flex-col flex-shrink-0 items-stretch ${selectedMenu && 'grid grid-cols-2 gap-5 items-center max-lg:grid-cols-1 '} ${selectedDate && 'gap-[110px] '}`} >
+          <div className={`  realtive h-screen flex gap-[10px] max-lg:h-full  max-lg:flex-col flex-shrink-0 items-stretch ${selectedMenu && 'grid grid-cols-2 gap-5 items-center max-lg:grid-cols-1 '} ${selectedDate && 'gap-[110px] '}`} >
             <NavTable
               data={tableInputs}
               selectedRow={selectedRow}
@@ -301,6 +301,11 @@ const InformationPage = ({ setLoggedIn }) => {
 
       </div>
       {/* </ThemeProvider> */}
+      <div className={` p-2 w-full  text-center   rounded-e-md rounded-s-md Poppins ${isDarkMode ? 'bg-[#293B46] text-white' : 'bg-[#FCFCFC]'}`} >
+            <p className=''>© 2024 Liwa Soft. All rights reserved || by</p>
+            <a href='https://www.ibrahimali.net'>Ibrahim Ali</a>
+           {/*  <span className="animate" style={i6}></span> */}
+          </div>
     </>
   );
 };

@@ -40,13 +40,13 @@ const BranchOptions = ({setIsHovered,isMenuOpen ,setIsmenuOpen,setisopen,setSele
           !selectedMenu ?
             <>
               <div className=' transition-all'>
-                <button
+                <a
                   type="button"
                   className=" compare-button "
                   id="options-menu"
                   aria-haspopup="true"
                   aria-expanded="true"
-                  onClick={toggleDropdown}
+                   href='/filter'
                 >
                   Compare
                   <svg
@@ -62,7 +62,7 @@ const BranchOptions = ({setIsHovered,isMenuOpen ,setIsmenuOpen,setisopen,setSele
                       clipRule="evenodd"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
               <div>
                 {isOpen && (

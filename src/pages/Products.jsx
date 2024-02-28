@@ -1,6 +1,7 @@
  import React from 'react'
 import ProductsNav from '../components/ProductsNav/ProductsNav'
 import ProductList from '../components/ProductList/ProductList'
+import Footer from '../components/footer/Footer'
 
  
  const Products = ({setLoggedIn}) => {
@@ -14,6 +15,7 @@ import ProductList from '../components/ProductList/ProductList'
      <div>
         <ProductsNav setLoggedIn={setLoggedIn}/>
         <ProductList />
+        <Footer/>
      </div>
      </>
    )

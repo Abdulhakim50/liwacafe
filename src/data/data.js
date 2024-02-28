@@ -10,6 +10,7 @@ export const User = [
 
 export const Products = [
   {
+     id:1,
     src: "/assets/image_1.png",
     name: "Ankara Branch",
     Lisans: "Active",
@@ -17,6 +18,7 @@ export const Products = [
     desc: "Mevcut Kasa Durumu",
   },
   {
+    id:2,
     src: "assets/image_2.png",
     name: "Murat Kafe",
     Lisans: "Active",
@@ -24,6 +26,7 @@ export const Products = [
     desc: "Mevcut Kasa Durumu",
   },
   {
+    id:3,
     src: "assets/image_3.png",
     name: "İzmir Branch",
     Lisans: "Active",
@@ -31,6 +34,7 @@ export const Products = [
     desc: "Mevcut Kasa Durumu",
   },
   {
+    id:4,
     src: "assets/image_4.png",
     name: "K.Maraş Branch",
     Lisans: "Active",
@@ -38,6 +42,7 @@ export const Products = [
     desc: "Mevcut Kasa Durumu",
   },
   {
+    id:5,
     src: "assets/image_6.png",
     name: "Liwa Cafe",
     Lisans: "Active",
@@ -45,6 +50,7 @@ export const Products = [
     desc: "Mevcut Kasa Durumu",
   },
   {
+    id:6,
     src: "assets/image_1.png",
     name: "Ankara Branch",
     Lisans: "Active",

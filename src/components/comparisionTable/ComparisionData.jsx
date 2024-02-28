@@ -25,7 +25,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
           <table className='table    '>
             <thead>
               <tr className='tableheading  '>
-                <th className={``} border-b colSpan="5">
+                <th className={`border-b`}  colSpan="5">
                   <h2 className="   Poppins ">Ozet Biligi</h2>
                 </th>
               </tr>
@@ -82,7 +82,7 @@ const ComparisionData = ({ isDarkMode, showTable,selectedMenu, selectedData, isO
 
                     {selectedData.info.map((data,index) => (
 
-                      <tr className={`selectedmenutwo ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' } `} >
+                      <tr className={`selectedmenutwo ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' } `} key={index} >
                         <td className={`  ${isOpen && 'px-[0px]'}`} >{data.MasaMusteri}</td>
                         <td className="  ">{data.AdsNoipSaysis}</td>
                         <td className="  ">{data.Durumu}</td>

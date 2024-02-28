@@ -24,7 +24,7 @@ const DataTableS = ({isDarkMode, showTable,selectedData, isOpen, isOpenPrice, ac
       {
               isOpenPrice &&
                 selectedProduct.info2.map((data,index) => (
-                  <tr key={data.id} className={` table-row-1 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                  <tr key={index} className={` table-row-1 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                     <td className=" ">
                       {data.name}
                     </td>
@@ -45,9 +45,9 @@ const DataTableS = ({isDarkMode, showTable,selectedData, isOpen, isOpenPrice, ac
               </tr>
           
 
-       { selectedData.info.map((data)=>(
+       { selectedData.info.map((data,index)=>(
       
-            <tr className= {`table-row-3 `} > 
+            <tr key={index} className= {`table-row-3 `} > 
             <td className= {`  ${isOpen && 'px-[0px]'} ${selectedMenu && ' lg:py-[24px]'}`} >{data.MasaMusteri}</td>
             <td className= {`  ${isOpen && 'px-[0px]'} ${selectedMenu && ''}`}>{data.AdsNoipSaysis}</td>
             <td className= {`  ${isOpen && 'px-[0px]'} ${selectedMenu && ''}`}>{data.Durumu}</td>
@@ -63,7 +63,7 @@ const DataTableS = ({isDarkMode, showTable,selectedData, isOpen, isOpenPrice, ac
           { 
                 activeAdisyon && 
                selectedActiveAdision.info.map((data,index) => (
-                <tr key={data.id} className={`table-row-4 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
+                <tr key={index} className={`table-row-4 ${index % 2 === 0 ? isDarkMode ? 'bg-[#293B46]' : 'bg-white': isDarkMode ? 'bg-[#293B46]':  'bg-[#FCFCFC]' }`}>
                 <td className="   Poppins">{data.name}</td>
                 <td className="   Poppins">{data.number}</td>
                 <td className="   Poppins">{data.percentage}</td>

@@ -2,6 +2,7 @@ import React from 'react'
 import LoginNav from '../components/LoginNav/LoginNav'
 import LoginForm from '../components/LoginForm/LoginForm'
 import MobileLogin from '../components/MobileLogin/MobileLogin'
+import Footer from '../components/footer/Footer'
 
 
 const Login = ({setLoggedIn}) => {
@@ -10,6 +11,7 @@ const Login = ({setLoggedIn}) => {
         <LoginNav/>
        <LoginForm setLoggedIn={setLoggedIn}/>
        <MobileLogin setLoggedIn={setLoggedIn}/>
+       <Footer/>
     </div>
     
     )
